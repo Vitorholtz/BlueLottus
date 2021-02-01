@@ -8,6 +8,8 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <title>Blue Lottus</title>
 </head>
 <body>
@@ -24,7 +26,7 @@
     </header>
 
     <section class="hero">
-        <h1>Quer fazer<br>parte da nossa<br><span class="h1-bold">comunidade?</span></h1>
+        <h1>Quer fazer<br>parte da nossa<br><span class="h1-bold">comunidade?</span> <i class="fas fa-chevron-down"></i></h1>
         <div class="btn-input">
             <div class="btn-input-header">
                 <h2>Cadastre-se em nossa plataforma</h2>
@@ -33,12 +35,24 @@
                 <span class="line2"></span>
                 </div>
             </div>  
-            <div class="inputs">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-            </div>
+            <form class="inputs">
+                       <label for="fname">Nome completo</label>
+                       <input type="text" id="name" name="firstname" placeholder="Rodrigo Silva..">
+                       <label for="email">E-mail:</label>
+                       <input type="text" id="email" name="email" placeholder="rodrigo_silva@bluelottus.com">
+                       <label for="fname">Telefone:</label>
+                       <input type="text" id="telefone" name="telefone" placeholder="(47) 99670...">
+                       <label for="email">Estado:</label>
+                       <input type="text" id="estado" name="estado" placeholder="São paulo">
+                       <label for="newsletter">Quer receber atualizações sobre nossos cursos?</label>
+                       <select id="newsletter" name="newsletter">
+                       <option value="sim">Sim</option>
+                       <option value="nao">Não</option>
+                       <option value="etc">Somente uma vez por semana</option>
+                      </select>
+                      <button class="btn-form">Cadastrar!</button>
+
+            </form>
         </div>
     </section>
 

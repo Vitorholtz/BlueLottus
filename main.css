@@ -102,6 +102,36 @@ header .menu .btn:hover {
   font-weight: 700;
 }
 
+.hero h1 .fa-chevron-down {
+  font-size: 3rem;
+  color: #E2E2E2;
+  opacity: .3;
+  -webkit-animation: arrow 1s infinite ease-in-out;
+          animation: arrow 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes arrow {
+  from {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  to {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+}
+
+@keyframes arrow {
+  from {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  to {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+}
+
 .hero .btn-input {
   max-width: 70rem;
   height: 7rem;
@@ -119,7 +149,6 @@ header .menu .btn:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  cursor: pointer;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
@@ -137,6 +166,7 @@ header .menu .btn:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
 }
 
 .hero .btn-input .btn-input-header h2 {
@@ -176,10 +206,10 @@ header .menu .btn:hover {
   -ms-flex-item-align: end;
       align-self: flex-end;
   border-radius: 10px;
-  -webkit-transition: -webkit-transform .4s ease-in-out;
-  transition: -webkit-transform .4s ease-in-out;
-  transition: transform .4s ease-in-out;
-  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
 }
 
 .hero .btn-input .inputs {
@@ -187,7 +217,7 @@ header .menu .btn:hover {
 }
 
 .hero .btn-input-active {
-  height: 50rem;
+  height: 60rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(white));
   background: linear-gradient(180deg, #e6e6e6 0%, white 100%);
   -webkit-box-align: start;
@@ -222,14 +252,78 @@ header .menu .btn:hover {
   -webkit-transform: translateY(-1.1rem);
           transform: translateY(-1.1rem);
   opacity: .2;
-  -webkit-transition: -webkit-transform .4s ease-in-out;
-  transition: -webkit-transform .4s ease-in-out;
-  transition: transform .4s ease-in-out;
-  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
 }
 
 .hero .btn-input-active .inputs {
   display: block;
+  width: 100%;
   margin-top: 4rem;
+  opacity: 1;
+  -webkit-animation-name: input;
+          animation-name: input;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes input {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes input {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero .btn-input-active .inputs label {
+  font-size: 1.6rem;
+}
+
+.hero .btn-input-active .inputs input[type=text], .hero .btn-input-active .inputs #newsletter {
+  width: 100%;
+  height: 4.2rem;
+  padding: 1.3rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  background-color: #E2E2E2;
+  outline: none;
+}
+
+.hero .btn-input-active .inputs .btn-form {
+  border: none;
+  width: 100%;
+  border-radius: 50rem;
+  padding: 1.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3186ee), color-stop(49%, #42abf3));
+  background: linear-gradient(180deg, #3186ee 0%, #42abf3 49%);
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 2rem;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 3rem 0;
+}
+
+.hero .btn-input-active .inputs .btn-form:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#428eeb), color-stop(49%, #58b1ec));
+  background: linear-gradient(180deg, #428eeb 0%, #58b1ec 49%);
 }
 /*# sourceMappingURL=main.css.map */

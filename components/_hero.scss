@@ -16,7 +16,20 @@
             color: $blue;
             font-weight: 700;
         }
+
+        .fa-chevron-down {
+            font-size: 3rem;
+            color: $lightgray;
+            opacity: .3;
+            animation: arrow 1s infinite ease-in-out;
+
+            @keyframes arrow {
+                from {transform: translateY(-1rem);}
+                to {transform: translateY( 1rem);}
+              }
+        }
     }
+
 
     .btn-input {
 
@@ -30,7 +43,6 @@
         margin: 2rem 4rem;
         display: flex;
         flex-direction: column;
-        cursor: pointer;
         transition: all .4s ease-in-out;
 
         &:hover {
@@ -42,6 +54,7 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
+            cursor: pointer;
 
         h2 {
 
@@ -73,7 +86,7 @@
                 background-color:$white;
                 align-self: flex-end;
                 border-radius: 10px;
-                transition: transform .4s ease-in-out;
+                transition: transform .2s ease-in-out;
             }
           }
         }
@@ -86,7 +99,7 @@
 
     .btn-input-active {
 
-        height: 50rem;
+        height: 60rem;
         background: $whitegradient;
         align-items: flex-start;
         color: $bgblack;
@@ -112,7 +125,7 @@
             background-color: $bgblack;
             transform: translateY(-1.1rem);
             opacity: .2;
-            transition: transform .4s ease-in-out;
+            transition: transform .2s ease-in-out;
             
         }
       }
@@ -120,8 +133,57 @@
       .inputs {
 
         display: block;
+        width: 100%;
         margin-top: 4rem;
-        
+        opacity: 1;
+        animation-name: input;
+        animation-duration: 1s;
+
+        @keyframes input {
+            from {opacity: 0;}
+            to {opacity: 1;}
+          }
+
+        label {
+
+            font-size: 1.6rem;
+        }
+
+        input[type=text], #newsletter {
+
+            width: 100%;
+            height: 4.2rem;
+            padding: 1.3rem 2rem;
+            border: none;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.6rem;
+            background-color: $lightgray;
+            outline: none;
+
+        }
+
+        .btn-form {
+
+            border: none;
+            width: 100%;
+            border-radius: 50rem;
+            padding: 1.5rem;
+            background: $gradientblue;
+            color: $white;
+            font-weight: 600;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: .3s;
+            align-self: center;
+            margin: 3rem 0;
+
+            &:hover {
+
+                background: $gradientblueHover;
+            }
+
+        }
      }
     }
 }
