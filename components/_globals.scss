@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+
+    &::before,&::after {
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    background: $bgblack;
+}
+
+html {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+
+}
+
+a,
+a:visited {
+    color: inherit;
+  
+}

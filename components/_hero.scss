@@ -1,0 +1,127 @@
+.hero {
+
+    max-width: 100rem;
+    margin: 7rem auto;
+
+    h1 {
+
+        color: $white;
+        font-size: 5.5rem;
+        font-weight: 400;
+        margin: auto 4rem;
+        line-height: 1.2;
+
+        .h1-bold {
+
+            color: $blue;
+            font-weight: 700;
+        }
+    }
+
+    .btn-input {
+
+        max-width: 70rem;
+        height: 7rem;
+        border-radius: 15px;
+        padding: 2rem 3rem 1.5rem 3rem;
+        background: $gradientblue;
+        color: $white;
+        font-weight: 200;
+        margin: 2rem 4rem;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+
+        &:hover {
+
+            background: $gradientblueHover;
+        }
+
+        .btn-input-header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+        h2 {
+
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        .btn-input-toggle {
+
+            width: 4rem;
+            height: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: .8rem 0 0 0 ;
+
+            .line1 {
+                display: block;
+                height: .4rem;
+                width: 100%;
+                background-color: $white;
+                border-radius: 10px;
+            }
+
+            .line2 {
+                display: block;
+                height: .4rem;
+                width: 50%;
+                background-color:$white;
+                align-self: flex-end;
+                border-radius: 10px;
+                transition: transform .4s ease-in-out;
+            }
+          }
+        }
+
+        .inputs {
+
+            display: none;
+        }
+    }
+
+    .btn-input-active {
+
+        height: 50rem;
+        background: $whitegradient;
+        align-items: flex-start;
+        color: $bgblack;
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            background: $whitegradient;
+        }
+
+        .btn-input-header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+
+        .btn-input-toggle .line1 {
+            
+            background-color: $bgblack;
+        }
+
+        .btn-input-toggle .line2 {
+            
+            background-color: $bgblack;
+            transform: translateY(-1.1rem);
+            opacity: .2;
+            transition: transform .4s ease-in-out;
+            
+        }
+      }
+
+      .inputs {
+
+        display: block;
+        margin-top: 4rem;
+        
+     }
+    }
+}

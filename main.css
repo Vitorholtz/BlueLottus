@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: #121214;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+header {
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 160rem;
+  height: 14rem;
+  margin: auto;
+  font-size: 1.6rem;
+}
+
+header .logo {
+  width: 18rem;
+  margin-left: 4rem;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: right;
+      align-self: right;
+  font-weight: 200;
+  gap: 3rem;
+  cursor: pointer;
+}
+
+header .menu .btn {
+  border: none;
+  border-radius: 50rem;
+  padding: 1rem 3rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3186ee), color-stop(49%, #42abf3));
+  background: linear-gradient(180deg, #3186ee 0%, #42abf3 49%);
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 1.7rem;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-right: 4rem;
+  -webkit-transform: translateY(-0.4rem);
+          transform: translateY(-0.4rem);
+}
+
+header .menu .btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#428eeb), color-stop(49%, #58b1ec));
+  background: linear-gradient(180deg, #428eeb 0%, #58b1ec 49%);
+}
+
+.hero {
+  max-width: 100rem;
+  margin: 7rem auto;
+}
+
+.hero h1 {
+  color: #FFFFFF;
+  font-size: 5.5rem;
+  font-weight: 400;
+  margin: auto 4rem;
+  line-height: 1.2;
+}
+
+.hero h1 .h1-bold {
+  color: #3399FF;
+  font-weight: 700;
+}
+
+.hero .btn-input {
+  max-width: 70rem;
+  height: 7rem;
+  border-radius: 15px;
+  padding: 2rem 3rem 1.5rem 3rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3186ee), color-stop(49%, #42abf3));
+  background: linear-gradient(180deg, #3186ee 0%, #42abf3 49%);
+  color: #FFFFFF;
+  font-weight: 200;
+  margin: 2rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.hero .btn-input:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#428eeb), color-stop(49%, #58b1ec));
+  background: linear-gradient(180deg, #428eeb 0%, #58b1ec 49%);
+}
+
+.hero .btn-input .btn-input-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .btn-input .btn-input-header h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.hero .btn-input .btn-input-header .btn-input-toggle {
+  width: 4rem;
+  height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: .8rem 0 0 0;
+}
+
+.hero .btn-input .btn-input-header .btn-input-toggle .line1 {
+  display: block;
+  height: .4rem;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.hero .btn-input .btn-input-header .btn-input-toggle .line2 {
+  display: block;
+  height: .4rem;
+  width: 50%;
+  background-color: #FFFFFF;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+}
+
+.hero .btn-input .inputs {
+  display: none;
+}
+
+.hero .btn-input-active {
+  height: 50rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(white));
+  background: linear-gradient(180deg, #e6e6e6 0%, white 100%);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #121214;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.hero .btn-input-active:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(white));
+  background: linear-gradient(180deg, #e6e6e6 0%, white 100%);
+}
+
+.hero .btn-input-active .btn-input-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .btn-input-active .btn-input-header .btn-input-toggle .line1 {
+  background-color: #121214;
+}
+
+.hero .btn-input-active .btn-input-header .btn-input-toggle .line2 {
+  background-color: #121214;
+  -webkit-transform: translateY(-1.1rem);
+          transform: translateY(-1.1rem);
+  opacity: .2;
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+}
+
+.hero .btn-input-active .inputs {
+  display: block;
+  margin-top: 4rem;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,45 @@
+header{
+
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 160rem;
+    height: 14rem;
+    margin: auto;
+    font-size: 1.6rem;
+
+
+    .logo {
+        width: 18rem;
+        margin-left: 4rem;
+    }
+
+    .menu {
+        display: flex;
+        align-self: right;
+        font-weight: 200;
+        gap: 3rem;
+        cursor: pointer;
+
+        .btn {
+
+            border: none;
+            border-radius: 50rem;
+            padding: 1rem 3rem;
+            background: $gradientblue;
+            color: $white;
+            font-weight: 400;
+            font-size: 1.7rem;
+            cursor: pointer;
+            transition:.3s;
+            margin-right: 4rem;
+            transform: translateY(-.4rem);
+
+            &:hover {
+
+                background: $gradientblueHover;
+            }
+        }
+    }
+}
