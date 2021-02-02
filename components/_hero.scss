@@ -155,11 +155,17 @@
             height: 4.2rem;
             padding: 1.3rem 2rem;
             border: none;
-            border-radius: 1rem;
+            border-radius: .5rem;
             margin-bottom: 1rem;
             font-size: 1.6rem;
             background-color: $lightgray;
             outline: none;
+
+
+            &:focus {
+
+                border: 3px $blue solid;
+            }
 
         }
 

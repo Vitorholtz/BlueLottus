@@ -43,3 +43,15 @@ header{
         }
     }
 }
+
+.gradient-ball {
+
+    width: 40rem;
+    height: 40rem;
+    border-radius: 20rem;
+    background: radial-gradient(circle, rgba(51,153,255,0.2) 0%, rgba(18,18,20,0.5) 60%);
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    z-index: -1;
+}
