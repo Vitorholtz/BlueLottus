@@ -341,4 +341,98 @@ header .menu .btn:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#428eeb), color-stop(49%, #58b1ec));
   background: linear-gradient(180deg, #428eeb 0%, #58b1ec 49%);
 }
+
+.social-proof {
+  width: 100rem;
+  margin: 20rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-proof .card {
+  max-width: 26rem;
+  height: auto;
+  background-color: #212025;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 3rem 3rem;
+  border-radius: .8rem .8rem 0 0;
+  position: relative;
+  margin: 0 3rem;
+}
+
+.social-proof .card .card-profile {
+  width: 60%;
+  position: relative;
+}
+
+.social-proof .card .card-profile .profile-img {
+  border-radius: 20rem;
+  width: 100%;
+}
+
+.social-proof .card h3 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.social-proof .card .card-icons {
+  width: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.social-proof .card .card-icons img {
+  width: 3rem;
+}
+
+.social-proof .card p {
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: #FFFFFF;
+}
+
+.social-proof .card .linkedin-conect {
+  width: 100%;
+  border: none;
+  position: absolute;
+  padding: 2rem 0;
+  bottom: -6.5rem;
+  border-radius: 0 0 .8rem .8rem;
+  background-color: #212025;
+  font-size: 2rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.social-proof .card .linkedin-conect:hover {
+  background-color: #27262c;
+}
+
+.social-proof .card .linkedin-conect i {
+  margin-right: 1rem;
+}
 /*# sourceMappingURL=main.css.map */
