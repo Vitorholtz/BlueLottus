@@ -374,6 +374,26 @@ header .menu .btn:hover {
   margin: 0 3rem;
 }
 
+.social-proof .card::before {
+  content: open-quote;
+  position: absolute;
+  top: -6rem;
+  left: 0;
+  font-size: 17rem;
+  font-family: Bebas Kai;
+  color: transparent;
+}
+
+.social-proof .card::after {
+  content: close-quote;
+  position: absolute;
+  top: -6rem;
+  left: 0;
+  font-size: 17rem;
+  font-family: Bebas Kai;
+  color: #3399FF;
+}
+
 .social-proof .card .card-profile {
   width: 60%;
   position: relative;
