@@ -455,4 +455,123 @@ header .menu .btn:hover {
 .social-proof .card .linkedin-conect i {
   margin-right: 1rem;
 }
+
+.teachers {
+  width: 100rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+  margin: 20rem auto;
+}
+
+.teachers .slide-desc {
+  color: #FFFFFF;
+  width: 40%;
+}
+
+.teachers .slide-desc h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.teachers .slide-desc h2::after {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  width: 5rem;
+  height: 1rem;
+  background: #3399FF;
+}
+
+.teachers .teacher-slide {
+  max-width: 50rem;
+  border-radius: .8rem;
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #212025;
+  color: #FFFFFF;
+}
+
+.teachers .teacher-slide .teacher-img {
+  width: 24rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.teachers .teacher-slide .teacher-img i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.teachers .teacher-slide .teacher-img .fa-chevron-right {
+  position: absolute;
+  right: -10rem;
+}
+
+.teachers .teacher-slide .teacher-img .fa-chevron-left {
+  position: absolute;
+  left: -10rem;
+}
+
+.teachers .teacher-slide .teacher-img img {
+  width: 100%;
+  border-radius: 20rem;
+}
+
+.teachers .teacher-slide h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.teachers .teacher-slide .expertise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem 0 0 0;
+}
+
+.teachers .teacher-slide .expertise p {
+  width: 50%;
+  font-size: 1.3rem;
+  border-right: 1px white solid;
+}
+
+.teachers .teacher-slide .expertise img {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 1rem;
+}
 /*# sourceMappingURL=main.css.map */
