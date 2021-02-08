@@ -97,7 +97,7 @@ header .menu .btn:hover {
 
 .hero {
   max-width: 100rem;
-  margin: 7rem auto;
+  margin: 10rem auto;
 }
 
 .hero h1 {
@@ -343,7 +343,7 @@ header .menu .btn:hover {
 }
 
 .social-proof {
-  width: 100rem;
+  max-width: 100rem;
   margin: 20rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,6 +351,8 @@ header .menu .btn:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .social-proof .card {
@@ -457,10 +459,12 @@ header .menu .btn:hover {
 }
 
 .teachers {
-  width: 100rem;
+  max-width: 100rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -468,7 +472,7 @@ header .menu .btn:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 2rem;
-  margin: 20rem auto;
+  margin: 30rem auto;
 }
 
 .teachers .slide-desc {
@@ -492,10 +496,14 @@ header .menu .btn:hover {
   background: #3399FF;
 }
 
+.teachers .slide-desc p {
+  font-size: 1.4rem;
+}
+
 .teachers .teacher-slide {
   max-width: 50rem;
   border-radius: .8rem;
-  padding: 4rem;
+  padding: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -514,7 +522,7 @@ header .menu .btn:hover {
 }
 
 .teachers .teacher-slide .teacher-img {
-  width: 24rem;
+  width: 23rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,7 +530,18 @@ header .menu .btn:hover {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+
+.teachers .teacher-slide .teacher-img::after {
+  position: absolute;
+  content: '';
+  top: -1.5rem;
+  left: -1.4rem;
+  height: 26rem;
+  width: 26rem;
+  border: 0.6rem #3399FF solid;
+  border-radius: 20rem;
 }
 
 .teachers .teacher-slide .teacher-img i {
@@ -573,5 +592,62 @@ header .menu .btn:hover {
   width: 4rem;
   height: 4rem;
   margin-left: 1rem;
+}
+
+.features {
+  max-width: 144rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30rem auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features .feature-card {
+  max-width: 28rem;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 2rem;
+}
+
+.features .feature-card i {
+  font-size: 8rem;
+  margin-bottom: 4rem;
+  opacity: .5;
+}
+
+.features .feature-card h3 {
+  font-size: 2.1rem;
+  margin-bottom: 2rem;
+  color: #3399FF;
+}
+
+.features .feature-card p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.features .feature-card a {
+  font-size: 1.6rem;
+  color: #3399FF;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.features .feature-card a:hover {
+  color: #FFFFFF;
+}
+
+footer .bottom-border {
+  width: 100%;
+  height: 1rem;
+  background-color: #3399FF;
 }
 /*# sourceMappingURL=main.css.map */

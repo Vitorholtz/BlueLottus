@@ -1,0 +1,47 @@
+.features {
+
+    max-width: 144rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30rem auto;
+    flex-wrap: wrap;
+
+    .feature-card {
+        max-width: 28rem;
+        color: $white;
+        text-align: center;
+        padding: 2rem;
+
+        i {
+            font-size: 8rem;
+            margin-bottom: 4rem;
+            opacity: .5;
+        }
+
+        h3 {
+
+            font-size: 2.1rem;
+            margin-bottom: 2rem;
+            color: $blue;
+        }
+
+        p {
+
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+        }
+
+        a {
+
+            font-size: 1.6rem;
+            color: $blue;
+            transition: .3s;
+
+            &:hover {
+                color: $white;
+            }
+            
+        }
+    }
+}

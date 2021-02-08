@@ -1,9 +1,10 @@
 .social-proof {
 
-    width: 100rem;
+    max-width: 100rem;
     margin: 20rem auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     
         .card {
 
