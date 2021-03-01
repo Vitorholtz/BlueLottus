@@ -650,4 +650,22 @@ footer .bottom-border {
   height: 1rem;
   background-color: #3399FF;
 }
+
+@media only screen and (max-width: 1600px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 45.5%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 42.5%;
+  }
+}
 /*# sourceMappingURL=main.css.map */

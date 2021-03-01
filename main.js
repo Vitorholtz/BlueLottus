@@ -7,3 +7,4 @@ inputButtonHeader.addEventListener('click', () => {
     inputButton.classList.toggle('btn-input-active')
 
 });
+
